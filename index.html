@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attract Bridal Studio | Premium Salon Services</title>
+    <meta name="description" content="Premium Bridal & Salon Services at Attract bridal studio.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        offwhite: '#FAFAFA',
+                        blush: '#F2E2E6',
+                        rose: '#B76E79',
+                        charcoal: '#333333',
+                        darker: '#1a1a1a'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-offwhite text-gray-800 font-sans antialiased">
+
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <h1 class="font-serif text-2xl font-bold tracking-wide text-charcoal">
+                Attract <span class="text-rose">Bridal Studio</span>
+            </h1>
+            
+            <nav class="hidden md:flex gap-8 items-center text-sm font-medium tracking-wide">
+                <a href="#services" class="hover:text-rose transition-colors">Services</a>
+                <a href="#portfolio" class="hover:text-rose transition-colors">Portfolio</a>
+                <a href="#testimonials" class="hover:text-rose transition-colors">Reviews</a>
+                <a href="#contact" class="px-6 py-2.5 bg-charcoal text-white hover:bg-rose transition-colors rounded-sm">
+                    Book Appointment
+                </a>
+            </nav>
+
+            <button id="mobile-menu-btn" class="md:hidden text-gray-800" aria-label="Toggle Menu">
+                <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg id="icon-close" class="hidden" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100">
+            <nav class="flex flex-col p-6 gap-4 text-center">
+                <a href="#services" class="text-lg mobile-link">Services</a>
+                <a href="#portfolio" class="text-lg mobile-link">Portfolio</a>
+                <a href="#testimonials" class="text-lg mobile-link">Reviews</a>
+                <a href="#contact" class="px-6 py-3 bg-charcoal text-white rounded-sm mt-2 mobile-link">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative pt-40 pb-32 px-6 md:px-12 flex items-center justify-center min-h-[90vh] bg-cover bg-center" style="background-image: url('./images/hero.jpg');">
+        <div class="absolute inset-0 bg-white/70"></div>
+        <div class="max-w-4xl mx-auto text-center z-10">
+            <h2 data-aos="fade-up" data-aos-duration="1000" class="font-serif text-5xl md:text-7xl font-semibold leading-tight mb-6 text-darker">
+                Transforming Your Special Day with <span class="text-rose italic">Elegance</span>
+            </h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="text-lg md:text-xl text-gray-800 mb-10 max-w-2xl mx-auto font-medium">
+                Premium Bridal & Salon Services at Attract bridal studio.
+            </p>
+            <a data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" href="https://wa.me/917809200087" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 px-8 py-4 bg-rose text-white text-lg font-medium hover:bg-[#a05d68] transition-all rounded-sm shadow-lg shadow-rose/20">
+                Book an Appointment 
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="services" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div data-aos="fade-up" class="text-center mb-16">
+            <h3 class="font-serif text-4xl font-semibold mb-4">Our Services</h3>
+            <div class="w-16 h-0.5 bg-rose mx-auto"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div data-aos="fade-up" data-aos-delay="0" class="bg-white p-8 border border-blush hover:shadow-xl transition-shadow group rounded-sm">
+                <h4 class="font-serif text-xl font-semibold mb-3 group-hover:text-rose transition-colors">Bridal & Engagement</h4>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed">Flawless, detail-oriented looks.</p>
+                <p class="text-sm font-medium text-charcoal border-t border-blush pt-4 uppercase tracking-widest">
+                    Led by <span class="text-rose">Aman</span>
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-8 border border-blush hover:shadow-xl transition-shadow group rounded-sm">
+                <h4 class="font-serif text-xl font-semibold mb-3 group-hover:text-rose transition-colors">Pre-Bridal Treatments</h4>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed">Comprehensive skin and beauty prep.</p>
+                <p class="text-sm font-medium text-charcoal border-t border-blush pt-4 uppercase tracking-widest">
+                    Led by <span class="text-rose">Gursharan</span>
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 border border-blush hover:shadow-xl transition-shadow group rounded-sm">
+                <h4 class="font-serif text-xl font-semibold mb-3 group-hover:text-rose transition-colors">Hair Styling</h4>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed">Professional cuts, styling & updos.</p>
+                <p class="text-sm font-medium text-charcoal border-t border-blush pt-4 uppercase tracking-widest">
+                    Led by <span class="text-rose">Rajan</span>
+                </p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300" class="bg-white p-8 border border-blush hover:shadow-xl transition-shadow group rounded-sm">
+                <h4 class="font-serif text-xl font-semibold mb-3 group-hover:text-rose transition-colors">Nail Artistry</h4>
+                <p class="text-gray-600 mb-6 font-light leading-relaxed">Extensions and elegant nail art.</p>
+                <p class="text-sm font-medium text-charcoal border-t border-blush pt-4 uppercase tracking-widest">
+                    Led by <span class="text-rose">Ruby</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-6 md:px-12 bg-blush/30">
+        <div class="max-w-7xl mx-auto">
+            <div data-aos="fade-up" class="text-center mb-16">
+                <h3 class="font-serif text-4xl font-semibold mb-4">Bridal Wedding Outfits</h3>
+                <p class="text-gray-600 font-light max-w-2xl mx-auto">Explore our stunning collection of premium bridal lehengas, crafted for your perfect day.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div data-aos="zoom-in" class="relative overflow-hidden group rounded-sm bg-gray-200">
+                    <img src="./images/product1.jpg" alt="Bridal Lehenga 1" loading="lazy" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-serif text-xl tracking-wider">View Details</span>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div data-aos="zoom-in" data-aos-delay="100" class="relative overflow-hidden group rounded-sm bg-gray-200">
+                    <img src="./images/product2.jpg" alt="Bridal Lehenga 2" loading="lazy" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-serif text-xl tracking-wider">View Details</span>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div data-aos="zoom-in" data-aos-delay="200" class="relative overflow-hidden group rounded-sm bg-gray-200">
+                    <img src="./images/product3.jpg" alt="Bridal Lehenga 3" loading="lazy" class="w-full aspect-[3/4] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <span class="text-white font-serif text-xl tracking-wider">View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+        <div data-aos="fade-up" class="text-center mb-16">
+            <div class="flex justify-center items-center gap-2 mb-4 text-rose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <defs>
+                        <linearGradient id="half-star">
+                            <stop offset="60%" stop-color="#B76E79" />
+                            <stop offset="60%" stop-color="#e5e7eb" />
+                        </linearGradient>
+                    </defs>
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star)"></polygon>
+                </svg>
+            </div>
+            <h3 class="font-serif text-4xl font-semibold mb-2">4.6 Stars Rated</h3>
+            <p class="text-gray-600 font-light">Loved by our beautiful brides</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div data-aos="fade-up" class="bg-white p-6 shadow-sm border border-blush rounded-sm flex flex-col gap-6">
+                <img src="./images/bride1.jpg" alt="Happy Bride 1" loading="lazy" class="w-full h-80 object-cover rounded-sm">
+                <p class="text-gray-700 italic relative z-10 leading-relaxed font-light">
+                    "A place with the best ambience. Just transformed the bride—looking damn beautiful!"
+                </p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 shadow-sm border border-blush rounded-sm flex flex-col gap-6">
+                <img src="./images/bride2.jpg" alt="Happy Bride 2" loading="lazy" class="w-full h-80 object-cover rounded-sm">
+                <p class="text-gray-700 italic relative z-10 leading-relaxed font-light">
+                    "Took care of all tiny details. Highly recommend the hair and nail services!"
+                </p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-6 shadow-sm border border-blush rounded-sm flex flex-col gap-6">
+                <img src="./images/bride3.jpg" alt="Happy Bride 3" loading="lazy" class="w-full h-80 object-cover rounded-sm">
+                <p class="text-gray-700 italic relative z-10 leading-relaxed font-light">
+                    "The team made me feel like a queen on my special day. The makeup was flawless and lasted all night."
+                </p>
+            </div>
+            <!-- Testimonial 4 -->
+            <div data-aos="fade-up" data-aos-delay="0" class="bg-white p-6 shadow-sm border border-blush rounded-sm flex flex-col gap-6">
+                <img src="./images/bride4.jpg" alt="Happy Bride 4" loading="lazy" class="w-full h-80 object-cover rounded-sm">
+                <p class="text-gray-700 italic relative z-10 leading-relaxed font-light">
+                    "Absolutely loved my bridal look! The lehenga styling and makeup were exactly what I dreamed of."
+                </p>
+            </div>
+            <!-- Testimonial 5 -->
+            <div data-aos="fade-up" data-aos-delay="100" class="bg-white p-6 shadow-sm border border-blush rounded-sm flex flex-col gap-6">
+                <img src="./images/bride5.jpg" alt="Happy Bride 5" loading="lazy" class="w-full h-80 object-cover rounded-sm">
+                <p class="text-gray-700 italic relative z-10 leading-relaxed font-light">
+                    "Such a professional and warm environment. They listened to exactly what I wanted and delivered perfectly."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-charcoal text-offwhite py-24 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            
+            <div data-aos="fade-up">
+                <h3 class="font-serif text-3xl font-semibold mb-8 text-white">Visit Us</h3>
+                <ul class="space-y-6 font-light">
+                    <li class="flex items-start gap-4">
+                        <svg class="text-rose shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Ground Floor, Malerkotla Rd, near Jethi Nagar, Chhote Khanna, Khanna, Punjab 141401</span>
+                    </li>
+                    <li class="flex items-center gap-4">
+                        <svg class="text-rose shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>+91 78092 00087</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <svg class="text-rose shrink-0 mt-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <div>
+                            <p>Mon-Sat: 9:30 AM - 6:30 PM</p>
+                            <p class="text-gray-400">Sunday: 9:30 AM - 6:00 PM</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="bg-white p-8 rounded-sm text-gray-800">
+                <h4 class="font-serif text-2xl font-semibold mb-6">Send a Message</h4>
+                <form class="space-y-4" aria-label="Contact Form">
+                    <input type="text" placeholder="Your Name" aria-label="Your Name" class="w-full p-3 border border-gray-200 focus:outline-none focus:border-rose rounded-sm transition-colors" required>
+                    <input type="tel" placeholder="Phone Number" aria-label="Phone Number" class="w-full p-3 border border-gray-200 focus:outline-none focus:border-rose rounded-sm transition-colors" required>
+                    <button type="submit" class="w-full py-4 bg-charcoal text-white hover:bg-rose transition-colors font-medium rounded-sm">
+                        Request Appointment
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="bg-darker text-gray-400 py-6 text-center text-sm">
+        <p>&copy; <span id="year"></span> Attract Bridal Studio. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
+        <!-- Call -->
+        <a href="tel:+917809200087" class="w-14 h-14 bg-blue-600 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-blue-700 hover:shadow-xl transition-all transform hover:-translate-y-1" aria-label="Call Us">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://instagram.com/" target="_blank" rel="noreferrer" class="w-14 h-14 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white rounded-full flex items-center justify-center shadow-lg hover:opacity-90 hover:shadow-xl transition-all transform hover:-translate-y-1" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/917809200087" target="_blank" rel="noreferrer" class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 hover:shadow-xl transition-all transform hover:-translate-y-1" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        </a>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize Animate On Scroll
+        AOS.init({
+            once: true,
+            offset: 100,
+            duration: 800,
+            easing: 'ease-out-cubic',
+        });
+
+        // Set Current Year in Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Sticky Navbar Logic
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.add('bg-transparent', 'py-6');
+                navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-sm', 'py-4');
+            }
+        });
+
+        // Mobile Menu Logic
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconMenu = document.getElementById('icon-menu');
+        const iconClose = document.getElementById('icon-close');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            iconMenu.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+
+        menuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', toggleMenu);
+        });
+    </script>
+</body>
+</html>
